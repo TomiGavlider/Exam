@@ -27,13 +27,7 @@ def deleteComments(file):
 
     except:
         print("An error occurred with accessing the files")
-        return path
+        return file
 
 
 print(deleteComments("comments.txt"))
-
-
-
-
-
-
