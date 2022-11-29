@@ -6,12 +6,12 @@ def deleteComments(file):
         my_file = open(file, 'r')
         data = my_file.read()
         clean = ""
-        comments_count = 0
+        comment = 0
         for i in data.split('\n'):
             if i[0] == "#":
                 clean += i
                 clean += '\n'
-                comments_count += 1
+                comment += 1
             else:
                 pass
         name = os.path.basename(path)
@@ -19,7 +19,7 @@ def deleteComments(file):
             f.write(clean)
             f.close()
         my_file.close()
-        return comments_count
+        return comment
 
 
 
