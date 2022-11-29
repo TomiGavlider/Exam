@@ -1,26 +1,27 @@
 def text_from_matrix(list):
-    evenodd = 0
+    even = 0
+    odd = 0
     output = ""
     for line in list:
-        if evenodd % 2 == 0:
-            evenodd2 = 0
+        if even% 2 == 0:
+            even = 0
             for even in line:
-                if evenodd2 % 2 == 0:
+                if even % 2 == 0:
                     output += even
                 else:
                     pass
-                evenodd2 += 1
+                odd += 1
 
         else:
-            evenodd2 = 0
+            odd = 0
             for odd in line:
-                if evenodd2 % 2 != 0:
+                if odd % 2 != 0:
                     output += odd
                 else:
                     pass
-                evenodd2 += 1
+                odd += 1
 
-        evenodd += 1
+        odd += 1
     return output
 
 
