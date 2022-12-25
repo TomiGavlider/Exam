@@ -21,13 +21,14 @@ def deleteComments(file):
         my_file.close()
         return comments_count
 
-
-
-
-
     except:
         print("An error occurred with accessing the files")
         return file
 
 
-print(deleteComments("comments.txt"))
+
+
+
+
+
+
