@@ -1,0 +1,17 @@
+(base) ➜  Desktop cd pokedex
+(base) ➜  pokedex git init
+Initialized empty Git repository in /Users/tamasgavlider/Desktop/pokedex/.git/
+(base) ➜  pokedex git:(master) ✗ cd generation-i
+(base) ➜  generation-i git:(master) ✗ cd water
+(base) ➜  water git:(master) ✗ ls
+pyduck.md   spearow.md  squirtle.md
+(base) ➜  water git:(master) ✗ mv pyduck.md psyduck.md
+(base) ➜  water git:(master) ✗ cd
+(base) ➜  Desktop cd pokedex
+(base) ➜  pokedex git:(master) ✗ cd generation-i
+(base) ➜  generation-i git:(master) ✗ mkdir flying
+(base) ➜  generation-i git:(master) ✗ mv fire/pidgey.md flying/
+(base) ➜  generation-i git:(master) ✗ mv water/spearow.md flying/
+(base) ➜  generation-i git:(master) ✗ touch my-pokemon.txt
+(base) ➜  generation-i git:(master) ✗ ls *grass/ > my-pokemon.txt
+(base) ➜  fire git:(master) ✗ git commit-m
