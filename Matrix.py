@@ -6,9 +6,8 @@ def transpose_matrix(matrix):
 
     for r in result:
         list.append(r)
-    print(list)
+    return list
 
-transpose_matrix([[1,2,3],[4,5,6],[7,8,9]])
 
 import unittest
 
@@ -16,12 +15,16 @@ import unittest
 class Testsum(unittest.TestCase):
 
     def test_method1(self):
+        expected_output = [[1, 4], [2, 5], [3, 6]]
+        result = transpose_matrix([[1,2,3],[4,5,6]])
 
-        self.assertEqual(transpose_matrix([[1,2,3],[4,5,6]]), None)
+        self.assertEqual(result,expected_output)
 
     def test_method2(self):
+        expected_output = [[1, 4, 7], [2, 5, 8], [3, 6, 9]]
+        result = transpose_matrix([[1,2,3],[4,5,6],[7,8,9]])
 
-        self.assert_(transpose_matrix([[1,2,3],[4,5,6],[7,8,9]]), [[1, 4, 7], [2, 5, 8], [3, 6, 9]])
+        self.assertEqual(result, expected_output)
 
 
 
